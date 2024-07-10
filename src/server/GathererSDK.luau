@@ -17,7 +17,7 @@
 local module = {}
 local envConfig = nil
 coroutine.wrap(function()
-    envConfig = require(game:GetService("ServerScriptService"):WaitForChild("EnvironmentConfig"))
+    envConfig = require(script.EnvironmentConfig)
 end)()
 
 ----------- Initialization of the Gatherer API services and URL environments

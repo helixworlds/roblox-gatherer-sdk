@@ -5,10 +5,10 @@
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "GathererSDK": {
-        "$path": "src/server/GathererSDK.luau"
-      },
-      "EnvironmentConfig": {
-        "$path": "src/server/EnvironmentConfig.luau"
+        "$path": "src/server/GathererSDK.luau",
+        "EnvironmentConfig": {
+          "$path": "src/server/EnvironmentConfig.luau"
+        }
       }
     }
   }
