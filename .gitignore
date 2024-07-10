@@ -1,0 +1,7 @@
+# Project place file
+/roblox-gatherer-sdk.rbxlx
+/roblox-gatherer-sdk.rbxl
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
