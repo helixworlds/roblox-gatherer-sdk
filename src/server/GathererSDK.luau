@@ -1,16 +1,28 @@
+-- GATHERER SDK v0.1.0
+--[[
+    This package was developed by MetaverseGroup and should be used
+    to track events and logs inside your Roblox games. It was created
+    to integrate with the Helixworlds System, so you can visit `app.helixworlds.io`
+    to see the gathered analytics.
+
+    Visit the website, create an account, an organization, your game, and get the
+    credentials to start tracking your users and getting knowledge to improve and
+    make your app more successful.
+
+    You can also create custom events and track them using this package, being able to measure
+    different kinds of actions and get good insights about your games and items!
+]] --
+
 ----------- Main Initialization of global variable from the Module scripts
-
 local module = {}
-
 local envConfig = nil
-
 coroutine.wrap(function()
     envConfig = require(game:GetService("ServerScriptService"):WaitForChild("EnvironmentConfig"))
 end)()
 
 ----------- Initialization of the Gatherer API services and URL environments
 local function initializeSDK(credentials)
-    print("SDK INITIALIZED")
+    print("GathererSDK: SDK Initialized")
     -- Getting env from credentials
     local env = credentials.env
     -- initialization of the variables
