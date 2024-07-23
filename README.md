@@ -12,16 +12,45 @@ This package contains 2 ModuleScripts that you can use to connect your game with
 
 ## Installation and Usage
 
-1. Clone the repository:
+### Setup
+
+Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/MyRobloxPackage.git
+   git clone https://github.com/MetaverseGroup/roblox-gatherer-sdk.git
    ```
 
-2. Install the Rojo VSCode Extension
+Install [aftman](https://github.com/LPGhatguy/aftman)
 
-3. Follow this [Rojo Doc (Building your Place)](https://rojo.space/docs/v7/getting-started/new-game/#building-your-place) to Build the package
+Install the components
 
-4. Open Roblox Studio and open the build file
+```
+aftman install
+```
 
-5. Follow this [Rojo Doc (Live Syncing)](https://rojo.space/docs/v7/getting-started/new-game/#live-syncing-into-studio) to make updates and see the changes reflected in realtime inside Roblox Studio (You need the [Rojo Plugin](https://create.roblox.com/store/asset/13916111004/Rojo?externalSource=www) installed)
+### VSCode Extension
+
+Install the Rojo VSCode Extension
+
+Follow this [Rojo Doc (Building your Place)](https://rojo.space/docs/v7/getting-started/new-game/#building-your-place) to Build the package
+
+Open Roblox Studio and open the build file
+
+Follow this [Rojo Doc (Live Syncing)](https://rojo.space/docs/v7/getting-started/new-game/#live-syncing-into-studio) to make updates and see the changes reflected in realtime inside Roblox Studio (You need the [Rojo Plugin](https://create.roblox.com/store/asset/13916111004/Rojo?externalSource=www) installed)
+
+### Local Server Syncing
+
+Install the plugin
+
+```
+rojo plugin install
+```
+
+## Development
+
+### Build 
+
+```
+rojo build -o gatherer.rbxlx
+```
+
