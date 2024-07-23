@@ -22,6 +22,18 @@ Clone the repository:
 
 Install [aftman](https://github.com/LPGhatguy/aftman)
 
+Run:
+
+```
+aftman self-install
+```
+
+Note: for mac add the following to ~/.bash_profile
+
+```
+export PATH=$PATH:~/.aftman/bin
+```
+
 Install the components
 
 ```
@@ -51,6 +63,14 @@ rojo plugin install
 ### Build 
 
 ```
-rojo build -o gatherer.rbxlx
+rojo build -o roblox-gatherer-sdk.rbxlx
 ```
+
+### Code
+
+Open roblox studio and open a game, or a create a new game.
+
+Open the rojo plugin under pluings and connect to the local rojo server
+
+Edit the files in VSCode or another IDE.
 
