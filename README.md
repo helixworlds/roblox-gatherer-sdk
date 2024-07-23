@@ -74,3 +74,17 @@ Open the rojo plugin under pluings and connect to the local rojo server
 
 Edit the files in VSCode or another IDE.
 
+## Contibuting
+
+### Install
+
+[pre-commit](https://pre-commit.com/)
+
+### Pull Requests
+
+Create a new PR use the ticket number to prepend the PR name
+
+### CI workflows
+
+See .github/workflows/ci.yaml
+
