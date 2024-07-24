@@ -64,7 +64,9 @@ jobs:
 
     - uses: actions/download-artifact@v4
       with:
-        name: rbxlx-file
+        path: rbxlx-file
+
+    - run: ls -R rbxlx-file
 
     - name: 'Get Current tag'
       id: currenttag
@@ -75,4 +77,4 @@ jobs:
     - name: Create Github release
       env:
         GH_TOKEN: ${{ github.token }}
-      run: gh release create ${{ steps.currrenttag.outputs.tag }} -t ${{ steps.currenttag.outputs.tag }} --generate-notes --latest -d roblox-gatherer-sdk.rbxlx
+      run: gh release create ${{ steps.currrenttag.outputs.tag }} -t ${{ steps.currenttag.outputs.tag }} --generate-notes --latest rbxlx-file/roblox-gatherer-sdk.rbxlx
