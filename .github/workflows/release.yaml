@@ -66,8 +66,6 @@ jobs:
       with:
         name: rbxlx-file
 
-    - run: ls -R .
-
     - name: 'Get Current tag'
       id: currenttag
       uses: "WyriHaximus/github-action-get-previous-tag@v1"
