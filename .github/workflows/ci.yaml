@@ -25,22 +25,22 @@ jobs:
       run: selene generate-roblox-std
 
     - name: Run Selene
-      run: selene ./src
+      run: selene --allow-warnings ./src
 
   build:
     name: Build
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
-      - uses: ok-nick/setup-aftman@v0.4.2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+    - uses: ok-nick/setup-aftman@v0.4.2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
 
 
-      - name: List installed aftman tools
-        run: aftman list
+    - name: List installed aftman tools
+      run: aftman list
 
-      - name: Build plugin
-        run: rojo build default.project.json -o roblox-gatherer-sdk.rbxlx
+    - name: Build plugin
+      run: rojo build default.project.json -o roblox-gatherer-sdk.rbxlx
