@@ -77,4 +77,4 @@ jobs:
     - name: Create Github release
       env:
         GH_TOKEN: ${{ github.token }}
-      run: gh release create ${{ steps.currrenttag.outputs.tag }} -t ${{ steps.currenttag.outputs.tag }} --generate-notes --latest rbxlx-file/roblox-gatherer-sdk.rbxlx
+      run: gh release create ${{ steps.currenttag.outputs.tag }} -t ${{ steps.currenttag.outputs.tag }} --generate-notes --latest rbxlx-file/roblox-gatherer-sdk.rbxlx
