@@ -1,4 +1,4 @@
--- GATHERER SDK v0.1.0
+-- GATHERER SDK v0.1.2
 --[[
     This package was developed by MetaverseGroup and should be used
     to track events and logs inside your Roblox games. It was created
