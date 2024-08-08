@@ -20,12 +20,15 @@ jobs:
       - name: List installed aftman tools
         run: aftman list
 
-      - name: Build and Release plugin
+      - name: Build Place
+        run: rojo build default.project.json -o roblox-gatherer-sdk.rbxlx
+
+      - name: Publish SDK to Roblox
+        shell: bash
         env:
           REMODEL_AUTH: ${{ secrets.ROBLOX_API_KEY }}
         run: |
-          rojo build default.project.json -o roblox-gatherer-sdk.rbxlx
-          remodel run publish.luau
+          remodel run publish.lua
 
       - uses: actions/upload-artifact@v4
         with:
