@@ -28,7 +28,7 @@ jobs:
         env:
           REMODEL_AUTH: ${{ secrets.ROBLOX_API_KEY }}
         run: |
-          remodel run publish.lua
+          remodel run publish.luau
 
       - uses: actions/upload-artifact@v4
         with:
