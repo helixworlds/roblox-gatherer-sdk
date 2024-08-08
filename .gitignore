@@ -2,6 +2,8 @@
 /roblox-gatherer-sdk.rbxlx
 /roblox-gatherer-sdk.rbxl
 
+# Excluding Gatherer SDK package and other models
+*.rbxm
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock

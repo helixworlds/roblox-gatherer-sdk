@@ -16,9 +16,9 @@ This package contains 2 ModuleScripts that you can use to connect your game with
 
 Clone the repository:
 
-   ```bash
-   git clone https://github.com/MetaverseGroup/roblox-gatherer-sdk.git
-   ```
+```bash
+git clone https://github.com/MetaverseGroup/roblox-gatherer-sdk.git
+```
 
 Install [aftman](https://github.com/LPGhatguy/aftman)
 
@@ -60,10 +60,18 @@ rojo plugin install
 
 ## Development
 
-### Build 
+### Build and Release
+
+Build Place:
 
 ```
-rojo build -o roblox-gatherer-sdk.rbxlx
+rojo build -o roblox-gatherer-sdk.rbxl
+```
+
+Create Model and Publish to Roblox:
+
+```
+remodel run publish.luau
 ```
 
 ### Code
@@ -73,8 +81,6 @@ Open roblox studio and open a game, or a create a new game.
 Open the rojo plugin under pluings and connect to the local rojo server
 
 Edit the files in VSCode or another IDE.
-
-## Contibuting
 
 ### Install
 
@@ -91,4 +97,3 @@ See .github/workflows/ci.yaml
 ### Release
 
 To create a new release, first create a PR and then add the patch, minor or major label to it depending upon the release updates
-

@@ -2,18 +2,12 @@
   "name": "roblox-gatherer-sdk",
   "tree": {
     "$className": "DataModel",
-    "HttpService": {
-      "$className": "HttpService",
-      "$properties": {
-        "HttpEnabled": true
-      }
-    },
     "ServerScriptService": {
       "$className": "ServerScriptService",
       "GathererSDK": {
-        "$path": "src/server/GathererSDK.luau",
+        "$path": "src/GathererSDK.luau",
         "EnvironmentConfig": {
-          "$path": "src/server/EnvironmentConfig.luau"
+          "$path": "src/EnvironmentConfig.luau"
         }
       }
     }
