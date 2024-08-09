@@ -21,7 +21,7 @@ jobs:
         run: aftman list
 
       - name: Build Place
-        run: rojo build default.project.json -o roblox-gatherer-sdk.rbxl
+        run: rojo build -o roblox-gatherer-sdk.rbxl
 
       - name: Publish SDK to Roblox
         shell: bash
