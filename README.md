@@ -96,4 +96,4 @@ See .github/workflows/ci.yaml
 
 ### Release
 
-To create a new release, first create a PR and then add the patch, minor or major label to it depending upon the release updates
+To create a new release, first create a PR and then add the patch, minor or major label to it depending upon the release updates.
