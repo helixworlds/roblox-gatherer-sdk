@@ -62,16 +62,10 @@ rojo plugin install
 
 ### Build and Release
 
-Build Place:
+Build Model:
 
 ```
-rojo build -o roblox-gatherer-sdk.rbxl
-```
-
-Create Model and Publish to Roblox:
-
-```
-remodel run publish.luau
+rojo build -o GathererSDK.rbxm
 ```
 
 ### Code
