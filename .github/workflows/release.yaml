@@ -21,14 +21,7 @@ jobs:
         run: aftman list
 
       - name: Build Place
-        run: rojo build -o roblox-gatherer-sdk.rbxl
-
-      - name: Publish SDK to Roblox
-        shell: bash
-        env:
-          REMODEL_AUTH: ${{ secrets.ROBLOX_API_KEY }}
-        run: |
-          remodel run publish.luau
+        run: rojo build -o GathererSDK.rbxm
 
       - uses: actions/upload-artifact@v4
         with:
