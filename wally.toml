@@ -1,7 +1,7 @@
 [package]
 # Package names are always "SCOPE/NAME"
 # They can include lowercase letters, numbers, and dashes.
-name = "mathgobbo/gatherer-sdk"
+name = "helixworlds/gatherer-sdk"
 
 # Descriptions are free-form. These will be used as part of package listings
 # and search results.
@@ -9,7 +9,7 @@ description = "SDK to integrate and work with the Helixworlds Gatherer API, that
 
 # Versions follow Semantic Versioning.
 # https://semver.org/
-version = "0.1.5"
+version = "0.1.0"
 
 # Contains an SPDX License Expression.
 # Licenses are required for publishing code to public registries.
