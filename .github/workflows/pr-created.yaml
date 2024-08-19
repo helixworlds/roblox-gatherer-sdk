@@ -1,0 +1,36 @@
+name: release
+
+on:
+  pull_request:
+    types: [created]
+
+jobs:
+  build:
+    name: Build
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ok-nick/setup-aftman@v0.4.2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: List installed aftman tools
+        run: aftman list
+
+      - name: Get Release from wally.toml
+        uses: SebRollen/toml-action@v1.0.0
+        id: read_toml
+        with:
+          file: "wally.toml"
+          field: "package.version"
+
+      - name: Publish to Wally
+        env:
+          WALLY_TOKEN: ${{ secrets.WALLY_AUTH_TOKEN }}
+        run: |
+          mkdir =p ~/.wally
+          printf "[tokens]\n\"https://api.wally.run/\" = \"%s\"" "$WALLY_TOKEN" >> ~/.wally/auth.toml
+          wally publish
