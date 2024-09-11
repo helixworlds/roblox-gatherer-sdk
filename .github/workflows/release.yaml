@@ -81,6 +81,7 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git pull
           git add wally.toml
           git commit -m "Update wally.toml version to ${{ steps.currenttag.outputs.tag }}"
           git push
