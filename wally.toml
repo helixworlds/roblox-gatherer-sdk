@@ -9,7 +9,7 @@ description = "SDK to integrate and work with the Helixworlds Gatherer API, that
 
 # Versions follow Semantic Versioning.
 # https://semver.org/
-version = "0.1.0"
+version = "0.1.8"
 
 # Contains an SPDX License Expression.
 # Licenses are required for publishing code to public registries.
