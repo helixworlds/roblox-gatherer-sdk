@@ -90,6 +90,9 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh release create ${{ steps.currenttag.outputs.tag }} -t ${{ steps.currenttag.outputs.tag }} --generate-notes --latest GathererSDK.rbxm
 
+      - name: List installed aftman tools
+        run: aftman list
+
       - name: Publish to Wally
         env:
           WALLY_TOKEN: ${{ secrets.WALLY_AUTH_TOKEN }}
