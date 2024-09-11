@@ -1,6 +1,6 @@
 # Roblox Gatherer SDK
 
-Current version: 0.1.0
+Current version: 0.1.9
 
 This package was developed by MetaverseGroup and should be used to track events and logs inside your Roblox games. It was created to integrate with the Helixworlds System, so you can visit `app.helixworlds.io` to see the gathered analytics.
 
